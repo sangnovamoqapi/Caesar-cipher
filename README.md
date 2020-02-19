@@ -20,5 +20,6 @@ We use concept frequency of most used two letter words
 and the taking the difference of individual letters like for instance
  consider "of" the difference will be 9 which is 'o'-'f'
 FLAW : there will be words which will have same differences
- We can overcome by using other cryptanalysis concepts which are still under work... 
+ We can overcome by using other cryptanalysis concepts which is under Implementation Process
+... 
 
