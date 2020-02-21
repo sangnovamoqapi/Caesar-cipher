@@ -3,7 +3,7 @@ SETUP:
 You need a C compiler.
 Run the code in the terminal with command
 
-gcc -o main main.c
+gcc -o decrypt decrypt.c
 then, 
 .\main
 
@@ -12,6 +12,7 @@ cc main.c
 ./a.out
 
 Save your encrypted file in the same directory as the downloaded repo, and name it "file2.txt".
+If you don't have one encrypt the data with the encrypt.c file while running same commands as above... 
 That's it!!
 
 Concept:
