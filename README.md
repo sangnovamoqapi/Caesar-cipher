@@ -5,7 +5,7 @@ Run the code in the terminal with command
 
 gcc -o decrypt decrypt.c
 then, 
-.\main
+.\decrypt
 
 or 
 cc main.c 
