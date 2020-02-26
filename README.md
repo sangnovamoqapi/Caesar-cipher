@@ -8,7 +8,7 @@ then,
 .\decrypt
 
 or 
-cc main.c 
+cc decrypt.c 
 ./a.out
 
 Save your encrypted file in the same directory as the downloaded repo, and name it "file2.txt".
@@ -21,6 +21,6 @@ We use concept frequency of most used two letter words
 and the taking the difference of individual letters like for instance
  consider "of" the difference will be 9 which is 'o'-'f'
 FLAW : there will be words which will have same differences
- We can overcome by using other cryptanalysis concepts which is under Implementation Process
+ We can overcome by using other cryptanalysis concepts which is under Implementation Process and will be added soon
 ... 
 
