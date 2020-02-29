@@ -1,7 +1,8 @@
 # Caesar-cipher
-SETUP:
-You need a C compiler.
-Run the code in the terminal with command
+SETUP REQUIREMENTS: linux based OS or a C compiler in other platforms
+Step 1: Save the File encrypted in shift cipher as encryptedData.txt 
+Step 2: Run the following commands in windows or linux platform respectively..
+If you don't have one encrypt the data with the encrypt.c file while running same commands  below... but with name encrypt instead of decrypt. Save the original file to be encrypted as "originalData.txt"
 
 gcc -o decrypt decrypt.c
 then, 
@@ -11,8 +12,8 @@ or
 cc decrypt.c 
 ./a.out
 
-Save your encrypted file in the same directory as the downloaded repo, and name it "file2.txt".
-If you don't have one encrypt the data with the encrypt.c file while running same commands as above... 
+Save your encrypted file in the same directory as the downloaded repository.
+
 That's it!!
 
 Concept:
