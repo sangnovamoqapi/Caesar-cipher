@@ -4,16 +4,16 @@ int main()
 {
      FILE *fp1,*fp2,*fp3;
      char c,encryptwith;
-     fp1=fopen("file.txt","r");
-     fp2=fopen("file4.txt","w");
-     fp3 = fopen("file2.txt","w");
+     fp1=fopen("originalData.txt","r");
+     fp2=fopen("encryptedData.txt","w");
+     fp3 = fopen("LowerCaseData.txt","w");
     while((c=fgetc(fp1))!=EOF){
         fputc(tolower(c),fp3);
     }
     fclose(fp3);
     printf("ENCRYPTWITH:\n");
     scanf("%d",&encryptwith);
-    fp3 = fopen("file2.txt","r");
+    fp3 = fopen("LowerCaseData.txt","r");
     while((c=fgetc(fp3))!=EOF){
          if(c==' '){
              fputc(c,fp2);
