@@ -1,11 +1,10 @@
-/*It's not scalable*/
-
+/*Not at all Scalable*/
+//Done with this two lettered words
 /*
-//EXAMPLES of flawed cases
 $$      be = or = -3
 $$      if = he = 3
 $$      to = up = 5
-"to" is important as in english language according to ngram viewer it contains of almost 2.4% which is not accountable
+to is important
 of = 9
 in = -5
 it = -9
@@ -27,14 +26,14 @@ us = 2
 am = 12
 */
 #include <stdio.h>
-#include<math.h>
+#include <math.h>
 int main()
 {
     FILE *fp,*fp2;
-    char c,account[]={"~-::@sangnovamoqapi::-~"};
-    // No need of array of 100 x 2, can be overcome, later it ill be addressed...
-    int a[2],decryptwith,i=0,ct=0,ans[100][2],key=0,diff,j;
-    fp = fopen("file2.txt","r");
+    char c,account[]={" ~::@sangnovamoqapi::~"};
+    // No need of ans array do it dynamically
+    int a[2],decryptwith,i=0,ct=0,ans[1000][2],key=0,diff,j;
+    fp = fopen("encryptedData.txt","r");
     //a = (int *)malloc(1000*sizeof(int));
     while((c=fgetc(fp))!= EOF)
     {
@@ -54,7 +53,7 @@ int main()
             }
         }
     }
-    /*ASSUME IT TO BE OF*/
+    /*ASSUME IT TO BE OF 'o' - 'f' = 9 falls under case 9:*/
     for(i=0;i<ct;i++)
     {
         diff = ans[i][0]-ans[i][1];
@@ -201,25 +200,13 @@ int main()
     key = 26 - key;
     printf("%d",key);
     fclose(fp);
-    printf("\nChoose an Operation for the Decrypted Text:-\n1.In file named as DECRYPTED.txt\t2.Print on conosole");
+    printf("\nChoose the Format of the Output\n1.in file2.Print Here");
     scanf("%d",&i);
     if(i==1){
         fp2 = fopen("DECRYPTED.txt","w");
-        fp = fopen("file2.txt","r");
-        fputs(credits,fp2);
+        fp = fopen("encryptedData.txt","r");
+        fputs(account,fp2);
         while((c=fgetc(fp))!=EOF){
-            /* if(c==' '){
-             fputc(c,fp2);
-             continue;
-            }
-            if(c=='\n'){
-                fputc(c,fp2);
-                continue;
-            }
-            if(c=='\t'){
-                fputc(c,fp2);
-                continue;
-            } */
             if(c>122||c<97)
             {
                 fputc(c,fp2);
@@ -232,7 +219,7 @@ int main()
         }
     }
     if(i==2){
-        fp = fopen("file2.txt","r");
+        fp = fopen("LowerCaseData.txt","r");
         printf("%s",account);
         while((c=fgetc(fp))!=EOF){
             if(c==' '){
